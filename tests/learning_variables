@@ -1,0 +1,100 @@
+# ------------------------------------------
+# Tori's Play Variable Playground: Variables & Functions
+# ------------------------------------------
+# This script introduces:
+# 1. Variables: names that hold data (like numbers and text)
+# 2. Functions: reusable blocks of code that perform tasks
+# 3. Strings: sequences of characters (text)
+
+# -------------------
+# Part 1: Variables
+# -------------------
+# A variable is like a container that stores a value.
+# For example, here we create a variable called 'name' that stores text (a string).
+
+name = "Alice"  # 'name' holds the string "Alice"
+print("Hello, my name is", name)
+
+# You can change the value stored in a variable.
+# Try changing this name to 'Tori' <3 :)
+name = "xxxx"
+print("Now, my name is", name)
+
+# Variables can also store numbers.
+age = 30           # An integer variable
+pi = 3.14159       # A float (decimal number) variable
+print("I am", age, "years old.")
+print("The value of pi is approximately", pi)
+# Try playing with different variable names and values e.g. neuron_count = 127
+# we can incorporate this ^ below in a function
+
+# -------------------
+# Part 2: Functions
+# -------------------
+# A function is a block of code designed to perform a specific task.
+# Functions help us organize code and make it reusable.
+# We define a function using the keyword 'def'.
+
+def greet(person_name):
+    """
+    This function greets the person whose name is passed as an argument.
+    """
+    # Inside the function, we use the argument to print a greeting message.
+    print("Hello", person_name + "! Welcome to the Python playground!")
+
+# Call the function 'greet' using different arguments.
+# This is where it will go in the place of (person_name).
+greet("Tori")   # Passing a string directly
+greet(name)      # Passing the variable 'name' (currently this variable is whatever you made it above)
+
+# Functions can also return a value.
+def add_numbers(num1, num2):
+    """
+    This function adds two numbers and returns the result.
+    """
+    result = num1 + num2
+    return result
+
+# Call the function and store the result in a variable.
+sum_result = add_numbers(10, 5)
+print("The sum of 10 and 5 is", sum_result)
+
+# Try to make your own function using variables like neuron_count and a string to call and add numbers to give you the final neuron_count. something fun idk...
+
+# -------------------
+# Part 3: Strings and Their Methods
+# -------------------
+# A string is a sequence of characters enclosed in quotes.
+message = "Learning Python is fun!"
+print("Original message:", message)
+
+# You can perform various operations on strings. For example:
+# Convert the string to uppercase.
+print("Uppercase message:", message.upper())
+
+# Get the length of the string (number of characters).
+print("Number of characters in the message:", len(message))
+
+# -------------------
+# Part 4: Combining Variables and Functions
+# -------------------
+# Variables can store data returned from functions.
+def display_info(person_name, person_age):
+    """
+    This function prints a summary of a person's information.
+    """
+    info = f"{person_name} is {person_age} years old."
+    print(info)
+
+# Use the function with different variables.
+display_info("Alice", 25)
+display_info(name, age)
+
+# -------------------
+# Conclusion
+# -------------------
+# Summary:
+# - Variables hold data (e.g., strings like "Alice", numbers like 30).
+# - Functions perform tasks and can take inputs (parameters) and return outputs.
+# - Strings are text, and Python provides many helpful methods to work with them.
+print("\nI louv you so much my lil python monkey! Explore, modify, and have fun learning.")
