@@ -1,4 +1,4 @@
-# tori_test_code
+# Tori's Test Code!
 test code to learn variables and functions
 
 Imagine you have a few magic boxes and recipes in your computer:
